@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Rush</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div>
+        <form id="user-info-sheet">
+            <div id="game-name">
+                <h2>Welcome to</h2>
+                <h1 id="title">SNAKE RUSH</h1>
+            </div>
+            <div>
+                <label for="nameInput">What is your name?</label><br>
+                <input type="text" id="nameInput" placeholder="Name" pattern="[A-Za-z]+" title="Names must only include letters." required><br><br>
+
+                <label for="ageInput">How old are you?</label><br>
+                <input type="number" id="ageInput" min="1" max="100" placeholder="Age" required><br><br>
+
+                <label for="favColor1">What is your favourite colour?</label><br>
+                <input type="color" id="favColor1" value="#32cd32"><br><br>
+
+                <label for="favColor2">What is your second favourite colour?</label><br>
+                <input type="color" id="favColor2" value="#ff0000"><br><br>
+
+                <button type="submit" class="homebutton">Play</button>
+                <button type="reset" class="homebutton">Reset Settings</button>
+            </div>
+            <div id="footer">
+                <footer>
+                    <p>&copy; 2025 Jonathan Gebretekle, McMaster University. All rights reserved.</p>
+                </footer>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

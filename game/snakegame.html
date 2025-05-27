@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Rush</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/snakegame.js"></script>
+</head>
+<body>
+    <h1 id="title">SNAKE RUSH</h1>
+    <div id="userinfo">
+        <div id="displayname"></div>
+        <div id="displayage"></div>
+        <div id="displayscore"></div>
+    </div>
+    <div id="nav"> 
+        <button id="open-helpbutton" class="stdbutton">Help</button>
+        <button id="menubutton" class="stdbutton">Main Menu</button>
+    </div>
+    <div id="instructions">
+        <div>
+            <h2>How to Play:</h2>
+        </div>
+        <div>
+            <p><strong>Goal:</strong> Move your snake towards the food item on the map 
+                and eat as much as you can to grow your snake as long as you can. Be careful
+                not to bump your head into the walls surrounding the map though!
+            </p>
+        </div>
+        <div>
+            <p><strong>Controls:</strong> If you're playing on computer, you can use your arrow keys 
+                to move the snake around the map and towards your meal. If you're on mobile, you can tap 
+                the onscreen buttons to navigate!
+            </p>
+        </div>
+        <div>
+            <p><strong>How To Win:</strong> As your snake continues to eat and grow, your speed will accelerate, 
+                so keep those reflexes sharp to ensure your survival! Rounds will begin based on how much your snake
+                has grown from eating (i.e. Every 20 meals progresses you to the next round). If you survive all of 
+                the rounds, you win!
+            </p>
+        </div>
+        <button id="close-helpbutton" class="stdbutton">Close</button>
+    </div>
+    <div id="round-screen">
+        <h2 id="round-message"></h2>
+    </div>
+    <div id="gameover-screen">
+        <div>
+            <h2 id="gameover-title">GAME OVER!</h2>
+        </div>
+        <div>
+            <p id="finalplayername"></p>
+            <p id="finalplayerage"></p>
+            <p id="finalgameround"></p>
+            <p id="finalgamescore"></p>
+        </div>
+        <button class="retrybutton stdbutton">Try Again</button>
+    </div>
+    <div id="map-environment" class="game-map"></div>
+    
+    <div class="mobile-controls">
+        <button class="control-button" id="up">⬆️</button>
+        <div class="row">
+            <button class="control-button" id="left">⬅️</button>
+            <button class="control-button" id="down">⬇️</button>
+            <button class="control-button" id="right">➡️</button>
+        </div>
+    </div>
+    <div id="win-screen">
+        <div>
+            <h2 id="win-title">YOU WON!</h2>
+        </div>
+        <div>
+            <p id="finalplayername"></p>
+            <p id="finalplayerage"></p>
+            <p id="finalgameround"></p>
+            <p id="finalgamescore"></p>
+        </div>
+        <button class="retrybutton stdbutton">Return to Main Menu</button>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>

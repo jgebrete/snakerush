@@ -1,0 +1,231 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 98vw;
+    background-color: #000000;
+    flex-direction: column;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#user-info-sheet {
+    background-color: black;
+    border: 5px #fff solid;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#game-name {
+    margin-bottom: 50px;
+}
+
+#title {
+    color: #32cd32;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+}
+
+input[type="color"] {
+    cursor: pointer;
+}
+
+#footer {
+    font-size: 10px;
+    margin-top: 50px;
+}
+
+#userinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 45%;
+}
+
+.homebutton {
+    border-radius: 100px;
+    border: 5px #fff solid;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.homebutton:hover {
+    background-color: #808782a8
+}
+
+.stdbutton {
+    border-radius: 100px;
+    border: 3px #fff solid;
+    margin: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.stdbutton:hover {
+    background-color: #6c6f6da8
+}
+
+#instructions {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    border: white 5px solid;
+    border-radius: 20px;
+    z-index: 1;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+#gameover-screen {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    border: rgb(227, 8, 8) 5px solid;
+    border-radius: 20px;
+    z-index: 1;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+#gameover-title {
+    color: rgb(227, 8, 8);
+}
+
+#win-screen {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    border: rgb(7, 201, 40) 5px solid;
+    border-radius: 20px;
+    z-index: 1;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+#win-title {
+    color: rgb(7, 201, 40);
+}
+
+.game-map {
+    position: relative;
+    display: grid;
+    gap: 1px;
+    background-color: #111;
+    border: 5px solid;
+}
+
+.cell {
+    background-color: #333;
+}
+
+.snake {
+    background-color: limegreen;
+}
+
+.food {
+    background-color: red;
+}
+
+#round-screen {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    border: rgb(255, 255, 255) 5px solid;
+    border-radius: 20px;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Mobile Controls */
+.mobile-controls {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.row {
+    display: none;
+    justify-content: center;
+}
+
+.control-button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    margin: 5px;
+    border: none;
+    background-color: limegreen;
+    color: black;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.control-btn:hover {
+    background-color: rgb(128, 128, 128);
+}
+
+@media screen and (max-width: 900px) {
+    #title {
+        font-size: 35px;
+    }
+
+    #userinfo {
+        font-size: 15px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #userinfo {
+        font-size: 13px;
+        width: 80%;
+    }
+
+    .mobile-controls {
+        display: flex;
+    }
+    
+    .row {
+        display: flex;
+    }
+    
+    .control-btn {
+        display: flex;
+    }
+}
