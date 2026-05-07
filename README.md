@@ -31,14 +31,17 @@ This project was one of the first official web apps I made while I was learning 
 
 ```
 snakerush/
-├── index.html              # Welcome screen and player profile form
+├── assets/
+│   └── snake-rush-demo.gif    
+├── index.html                 # Welcome screen and player profile form
 ├── css/
-│   └── styles.css          # Styling for the home screen and game UI
+│   └── styles.css             # Styling for the home screen and game UI
 ├── js/
-│   └── index.js            # Form handler that saves inputs to sessionStorage and redirects to game
-└── game/
-    ├── snakegame.html      # Game screen: grid, HUD, overlays, mobile controls
-    └── snakegame.js        # Core game logic: movement, collision, rendering, speed, win/lose
+│   └── index.js               # Form handler that saves inputs to sessionStorage and redirects to game
+├── game/
+    ├── snakegame.html         # Game screen: grid, HUD, overlays, mobile controls
+    └── snakegame.js           # Core game logic: movement, collision, rendering, speed, win/lose
+└── README.md
 ```
 
 ---
