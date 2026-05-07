@@ -80,9 +80,17 @@ You can also host it instantly using [GitHub Pages](https://pages.github.com/) o
 6. Avoid the walls and your own body or fill the entire board to win!
 
 ---
+
+## 📸 Preview
+
+**Mobile Demo:**
+
+<img src="assets/snake-rush-demo.gif" width="300"/>
+
+---
  
 ## 🛠️ Tech Stack
- 
+
 | Technology | Role |
 |------------|------|
 | HTML5 | Structure, form UI inputs, game grid |
