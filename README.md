@@ -41,6 +41,7 @@ snakerush/
 ├── game/
     ├── snakegame.html         # Game screen: grid, HUD, overlays, mobile controls
     └── snakegame.js           # Core game logic: movement, collision, rendering, speed, win/lose
+├── LICENSE
 └── README.md
 ```
 
